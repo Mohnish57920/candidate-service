@@ -17,7 +17,7 @@
 		<java.version>11</java.version>
 		<gcp-project-name>example-project-gke</gcp-project-name>
 		<image-name>candidate-service</image-name>
-		<image-version>v1.0</image-version>
+		<image-version>v1.1</image-version>
 	</properties>
 	<dependencies>
 		<dependency>
