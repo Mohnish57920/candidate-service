@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/v1/candidate")
@@ -38,9 +39,13 @@ public class CandidateController {
     }
 
     @GetMapping
-    ResponseEntity<List<Candidate>> getAllCandidates(){
+    ResponseEntity<List<CandidateDto>> getAllCandidates(){
         List<Candidate> candidates = candidateService.findAll();
-        return ResponseEntity.ok(candidates);
+        List<CandidateDto> candidateDtoList = candidates.stream()
+                .map(c -> modelMapper.map(c, CandidateDto.class))
+                .collect(Collectors.toList());
+        log.info("Response sent for {} candidates ", candidateDtoList.size());
+        return ResponseEntity.ok(candidateDtoList);
     }
 
     @PostMapping("/add")

@@ -1,24 +1,22 @@
-# Read Me First
+# Candidate Service
 The following was discovered as part of building this project:
 
 * The original package name 'com.altimetrik-example.cadidate-service' is invalid and this project uses 'com.altimetrikexample.cadidateservice' instead.
 
 # Getting Started
 
-### Reference Documentation
-For further reference, please consider the following sections:
+### Overview
+This application contains APIs to perform CRUD operations for the cadidates. Contains REST endpoints to create
+and get candidate info.
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.14/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.14/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.7.14/reference/htmlsingle/index.html#web)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.7.14/reference/htmlsingle/index.html#data.sql.jpa-and-spring-data)
+[GitHub Link](https://github.com/Mohnish57920/candidate-service)
 
-### Guides
-The following guides illustrate how to use some features concretely:
+### API Documentation
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+* GET /v1/candidate/{ID} - Return candidate information based on Id provided
+* GET /v1/candidate - Return candidate information for all candidates
+* POST /v1/candidate/add - saves the candidate information after checking the credit score
+  based on Id provided
+
+
 
