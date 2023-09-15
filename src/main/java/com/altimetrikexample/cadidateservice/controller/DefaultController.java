@@ -13,6 +13,7 @@ public class DefaultController {
         return "This is message from candidate service application.";
     }
 
+    //comment 1
     @GetMapping("/start")
     String start01Service(){
         return "This is alternate message from candidate service application.";
