@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.altimetrik-example</groupId>
 	<artifactId>cadidate-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>cadidate-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
